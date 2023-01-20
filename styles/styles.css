@@ -255,14 +255,27 @@ p {
   letter-spacing: 0;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+
 header {
-  background-color: #1d293e;
+  background-color: #052e40;
   width: 100%;
   height: 100vh;
 }
 
 .wrapper {
   width: 90%;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
 }
 
 nav {
@@ -276,7 +289,6 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -295,11 +307,81 @@ nav ul li {
   padding: 0 20px;
 }
 
-.mobileMenu {
+.mobile-menu {
   display: none;
 }
 
-.introContainer {
+.intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.profile-picture {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about {
+  background-color: #1d293e;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-image-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about-text-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.portfolio {
+  background-color: #1d293e;
+}
+.portfolio h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-item-img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.portfolio-item-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contact {
+  background-color: #1d293e;
+}
+
+.social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

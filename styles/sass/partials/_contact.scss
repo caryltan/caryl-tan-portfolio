@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.contact {
+    background-color: $background-dark-blue;
+}
+
+.social-media {
+    display: flex;
+}

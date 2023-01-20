@@ -32,9 +32,17 @@ p {
     letter-spacing: 0;
 }
 
+a {
+    color: $text-color;
+    text-decoration: none;
+    &:visited {
+        color: $text-color;
+    }
+}
+
 //header
 header {
-    background-color: $background-dark;
+    background-color: $background-dark-green;
     width: 100%;
     height: 100vh;
 }
@@ -42,4 +50,11 @@ header {
 //classes
 .wrapper {
     width: 90%;
+    margin: 0 auto;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
 }

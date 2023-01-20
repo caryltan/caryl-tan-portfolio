@@ -1,0 +1,25 @@
+@use '../variables' as *;
+
+.portfolio {
+    background-color: $background-dark-blue;
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.portfolio-item-left {
+    display: flex;
+}
+
+.portfolio-item-right {
+    display: flex;
+}
+
+.portfolio-item-img {
+    flex-basis: 50%;
+}
+
+.portfolio-item-text {
+    flex-basis: 50%;
+}

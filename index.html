@@ -7,42 +7,134 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Caryl Tan Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14cabc6321.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="home" id="home">
         <div class="wrapper">
             <!-- Desktop Nav -->
-            <nav class="desktopMenu" id="desktopMenu">
+            <nav class="desktop-menu" id="desktop-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- Mobile Nav -->
-            <nav class="mobileMenu" id="mobileMenu">
+            <nav class="mobile-menu" id="mobile-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- Header Intro -->
-            <div class="introContainer">
+            <div class="intro-container">
                 <!-- short intro text -->
-                <div class="introText" id="introText">
-                    <h1><span>Caryl Tan</span>I'm Enthusiastic</h1>
+                <div class="intro-text" id="intro-text">
+                    <h1>Caryl Tan</h1>
+                    <h2>I'm Enthusiastic</h2>
                     <p>I'm a junior front-end web developer with a ton of passion and love for web development. Let me tell you about myself!</p>
+                    <!-- see portfolio button -->
+                    <div class="button-portfolio">
+                        <a href="#portfolio">See Portfolio</a>
+                    </div>
                 </div>
                 <!-- headshot photo -->
-                <div class="profilePicture" id="profilePicture">
+                <div class="profile-picture" id="profile-picture">
                     <img src="" alt="">
+                </div>
+            </div> <!-- introContainer end -->
+        </div> <!-- wrapper end-->
+    </header> <!-- header end-->
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="wrapper">
+            <div class="about-container">
+                <div class="about-image-container">
+                    <img src="" alt="">
+                </div>
+                <div class="about-text-container">
+                    <h2>Hello!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi soluta perspiciatis illum commodi autem aut officiis ex officia doloribus.</p>
+                    <a href="resume-button">Download Resume</a>
                 </div>
             </div>
         </div>
-    </header>
+    </section> <!--about section end-->
+
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="wrapper">
+            <h2>Things I've Made</h2>
+            <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="" alt="">
+                </div>
+                <div class="portfolio-item-text">
+                    <h3>Portfolio Item</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                </div>
+            </div>
+            <div class="portfolio-item-right">
+                <div class="portfolio-item-text">
+                    <h3>Portfolio Item</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                </div>
+                <div class="portfolio-item-img">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="" alt="">
+                </div>
+                <div class="portfolio-item-text">
+                    <h3>Portfolio Item</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                </div>
+            </div>
+            <div class="portfolio-item-right">
+                <div class="portfolio-item-text">
+                    <h3>Portfolio Item</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                </div>
+                <div class="portfolio-item-img">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div> 
+    </section> <!--portfolio section end-->
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <h2>Let's Connect!</h2>
+            <div class="form-section">
+                <form>
+
+                </form>
+            </div>
+            <div class="form-text">
+                <h3></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero mollitia, sequi nihil assumenda provident quos alias blanditiis nobis ex?</p>
+                <ul class="social-media">
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <i class="fa-brands fa-instagram"></i>
+                </ul>
+            </div>
+        </div>
+    </section> <!--contact section end-->
+
+    <!--footer section-->
+    <footer>
+        <p>Copyright © 2023 Caryl Tan</p>
+    </footer>
 	<script src="script.js"></script>
 </body>
 </html>

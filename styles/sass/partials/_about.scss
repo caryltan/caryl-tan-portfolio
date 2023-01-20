@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+.about {
+    background-color: $background-dark-blue;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-image-container {
+    flex-basis: 50%;
+}
+
+.about-text-container {
+    flex-basis: 50%;
+}

@@ -9,7 +9,6 @@ nav {
         margin: 0 auto;
         padding-top: 30px;
         display: flex;
-        list-style: none;
         justify-content: flex-end;
         a {
             color: $text-color;
@@ -27,6 +26,6 @@ nav {
     }
 }
 
-.mobileMenu {
+.mobile-menu {
     display: none;
 }
