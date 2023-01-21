@@ -246,6 +246,16 @@ h6 {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 55px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
 p {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -263,6 +273,10 @@ a:visited {
   color: #fff;
 }
 
+ul li {
+  list-style: none;
+}
+
 header {
   background-color: #052e40;
   width: 100%;
@@ -270,12 +284,31 @@ header {
 }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
-ul li {
-  list-style: none;
+.button {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.button.portfolio-button {
+  text-transform: uppercase;
+  width: 40%;
+  margin-top: 50px;
+}
+.button.portfolio-button:hover {
+  background-color: #fff;
+}
+.button.portfolio-button:hover a {
+  color: #333333;
 }
 
 nav {
@@ -311,6 +344,10 @@ nav ul li {
   display: none;
 }
 
+header {
+  position: relative;
+}
+
 .intro-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,31 +357,70 @@ nav ul li {
 .intro-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  position: relative;
+  top: 30vh;
 }
 
 .profile-picture {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-}
-
-.about {
-  background-color: #1d293e;
-}
-
-.about-container {
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.profile-picture img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
 }
 
-.about-image-container {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.skills {
+  background-color: #1d293e;
+  margin: auto 0;
+  padding: 80px 0;
+}
+.skills h2 {
+  margin: auto 0;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  padding: 25px 0;
+}
+.skills ul li i {
+  padding-bottom: 20px;
 }
 
-.about-text-container {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.firebase-logo {
+  height: 95px;
+  padding-bottom: 20px;
 }
 
 .portfolio {
@@ -373,6 +449,52 @@ nav ul li {
 }
 
 .portfolio-item-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.made-with-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.made-with-icons li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.about {
+  background-color: #1d293e;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-image-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.about-image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 510px;
+  max-width: 510px;
+}
+
+.about-text-container {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }

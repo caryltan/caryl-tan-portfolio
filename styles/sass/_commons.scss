@@ -23,6 +23,16 @@ h6{
 	font-weight: 600;
 }
 
+h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
 p {
     font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
@@ -40,6 +50,12 @@ a {
     }
 }
 
+ul {
+    li {
+        list-style: none;
+    }
+}
+
 //header
 header {
     background-color: $background-dark-green;
@@ -49,12 +65,29 @@ header {
 
 //classes
 .wrapper {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
-ul {
-    li {
-        list-style: none;
+//buttons
+.button {
+    border: 2px solid $text-color;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 1s ease-out;
+    &.portfolio-button {
+        text-transform: uppercase;
+        width: 40%;
+        margin-top: 50px;
+        &:hover {
+            background-color: $text-color;
+            a {
+                color: $text-color-dark;
+            }
+        }
     }
 }

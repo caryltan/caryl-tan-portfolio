@@ -10,6 +10,12 @@
 
 .about-image-container {
     flex-basis: 50%;
+    img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 510px;
+        max-width: 510px;
+    }
 }
 
 .about-text-container {
