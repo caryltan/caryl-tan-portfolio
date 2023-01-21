@@ -33,6 +33,11 @@ h2 {
     font-weight: 900;
 }
 
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
 p {
     font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
@@ -65,8 +70,12 @@ header {
 
 //classes
 .wrapper {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+}
+
+.orange-text {
+    color: $text-color-orange;
 }
 
 //buttons

@@ -256,6 +256,11 @@ h2 {
   font-weight: 900;
 }
 
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 p {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -284,8 +289,12 @@ header {
 }
 
 .wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.orange-text {
+  color: #f0bb62;
 }
 
 .button {
@@ -429,6 +438,13 @@ header {
 .portfolio h2 {
   margin: 0 auto;
   text-align: center;
+  padding: 50px 0;
+}
+.portfolio h4 {
+  text-align: center;
+}
+.portfolio i {
+  padding-bottom: 10px;
 }
 
 .portfolio-item-left {
@@ -470,6 +486,10 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+.portfolio-item-img img {
+  width: 100%;
 }
 
 .about {
