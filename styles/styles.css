@@ -438,7 +438,10 @@ header {
 .portfolio h2 {
   margin: 0 auto;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 100px;
+}
+.portfolio h3 {
+  padding-top: 0;
 }
 .portfolio h4 {
   text-align: center;
@@ -476,6 +479,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
 }
 .made-with-icons li {
   display: -webkit-box;
@@ -488,8 +492,40 @@ header {
   text-align: center;
 }
 
+.portfolio-item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .portfolio-item-img img {
   width: 100%;
+}
+
+.portfolio-item-right {
+  padding-bottom: 75px;
+}
+.portfolio-item-right .portfolio-item-img {
+  margin-left: 75px;
+}
+.portfolio-item-right .portfolio-item-text {
+  margin-right: 75px;
+}
+
+.portfolio-item-left {
+  padding-bottom: 75px;
+}
+.portfolio-item-left .portfolio-item-img {
+  margin-right: 75px;
+}
+.portfolio-item-left .portfolio-item-text {
+  margin-left: 75px;
 }
 
 .about {
