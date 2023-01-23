@@ -1,14 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caryl Tan Portfolio Site</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<title>Caryl Tan Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14cabc6321.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <h1>🚧Work In Progress🚧</h1>
+    <header class="home" id="home">
+        <div class="wrapper">
+            <!-- Desktop Nav -->
+            <nav class="desktop-menu" id="desktop-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Nav -->
+            <nav class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Header Intro -->
+            <div class="intro-container">
+                <!-- short intro text -->
+                <div class="intro-text" id="intro-text">
+                    <h1>Caryl Tan</h1>
+                    <h2 class="orange-text">Front-end Developer</h2>
+                    <p>I'm a junior front-end web developer with a ton of passion and love for web development. Let me tell you about myself!</p>
+                    <!-- see portfolio button -->
+                    <div class="button portfolio-button">
+                        <a href="#portfolio">See Portfolio</a>
+                    </div>
+                </div>
+                <!-- headshot photo -->
+                <div class="profile-picture" id="profile-picture">
+                    <img src="./assets/profile-picture-4.png" alt="My beautiful, smiling face">
+                </div>
+            </div> <!-- introContainer end -->
+        </div> <!-- wrapper end-->
+    </header> <!-- header end-->
 
+
+    <!-- skills and languages section-->
+    <section class="skills" id="skills">
+        <div class="wrapper">
+            <h2>Look Ma, I <span class="orange-text">Can Do...!</span></h2>
+            <ul>
+                <li><i class="fa-brands fa-html5 fa-5x"></i>HTML</li>
+                <li><i class="fa-brands fa-css3-alt fa-5x"></i>CSS</li>
+                <li><i class="fa-brands fa-sass fa-5x"></i>Sass</li>
+                <li><i class="fa-brands fa-square-js fa-5x"></i>JavaScript</li>
+                <li><i class="fa-brands fa-react fa-5x"></i>React</li>
+                <li><i class="fa-brands fa-square-git fa-5x"></i>Git</li>
+                <li><i class="fa-brands fa-wordpress fa-5x"></i>Wordpress</li>
+                <li><img src="./assets/firebase-logo.svg" class="firebase-logo" alt="Firebase Logo">Firebase</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- portfolio section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="wrapper">
+            <h2>Things <span class="orange-text">I've Made</span></h2>
+
+            <!-- portfolio item one-->
+            <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="./assets/pokemon-battle-simulator-mockup.png" alt="Screenshot of the Pokemon Battle Simulator website on desktop and mobile devices">
+                </div>
+                <div class="portfolio-item-text">
+                    <div class="title-section">
+                        <h3>Pokemon Battle Simulator 
+                            <span class="span-spacer">
+                                <a href="https://pokemonbattlesimulator.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square icon-size" alt="Go to live site"></i></a>
+                            </span>
+                            <span>
+                                <a href="https://github.com/caryltan/pokemonBattleSimulator"><i class="fa-brands fa-github icon-size" alt="Go to Github Repo"></i></a>
+                            </span>
+                        </h3>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                    <h4>Made With:</h4>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-html5 fa-2x"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt fa-2x"></i>CSS</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><i class="fa-brands fa-square-js fa-2x"></i>JavaScript</li>
+                        <li><i class="fa-solid fa-heart fa-2x"></i>Love</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- portfolio item two-->
+            <div class="portfolio-item-right">
+                <div class="portfolio-item-text">
+                    <h3>Captured
+                        <span class="span-spacer">
+                            <a href="https://caryltan-project-1.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square icon-size" alt="Go to live site"></i></a>
+                        </span>
+                        <span>
+                            <a href="https://github.com/caryltan/caryl-tan-project-1"><i class="fa-brands fa-github icon-size" alt="Go to Github Repo"></i></a>
+                        </span>
+                    </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                    <h4>Made With:</h4>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-html5 fa-2x"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt fa-2x"></i>CSS</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><i class="fa-brands fa-square-js fa-2x"></i>JavaScript</li>
+                        <li><i class="fa-solid fa-face-tired fa-2x"></i>Determination</li>
+                    </ul>
+                </div>
+                <div class="portfolio-item-img">
+                    <img src="./assets/captured-mockup.png" alt="Screenshot of a photography website called Captured on desktop and mobile devices">
+                </div>
+            </div>
+
+            <!-- portfolio item three-->
+            <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="./assets/ultimate-puppy-mockup.png" alt="Screenshot of a dog training website called Ultimate Puppy on desktop and mobile devices">
+                </div>
+                <div class="portfolio-item-text">
+                    <h3>Ultimate Puppy
+                        <span class="span-spacer">
+                            <a href="https://caryltan-project-1.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square icon-size" alt="Go to live site"></i></a>
+                        </span>
+                    </h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                    <h4>Made With:</h4>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-html5 fa-2x"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt fa-2x"></i>CSS</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><i class="fa-brands fa-wordpress fa-2x"></i>Wordpress</li>
+                        <li><i class="fa-solid fa-dog fa-2x"></i>Pawsitivity</li>
+                    </ul>
+                </div>
+            </div> <!--portfolio item three end-->
+
+            <!-- portfolio item four-->
+            <div class="portfolio-item-right">
+                <div class="portfolio-item-text">
+                    <h3>THIS Portfolio Site
+                        <span class="span-spacer">
+                            <a href="https://caryltan-project-1.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square icon-size" alt="Go to live site"></i></a>
+                        </span>
+                        <span>
+                            <a href="https://github.com/caryltan/caryl-tan-project-1"><i class="fa-brands fa-github icon-size" alt="Go to Github Repo"></i></a>
+                        </span>
+                    </h3>
+                    <p>So very meta.</p>
+                    <h4>Made With:</h4>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-html5 fa-2x"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt fa-2x"></i>CSS</li>
+                        <li><i class="fa-brands fa-sass fa-2x"></i>Sass</li>
+                        <li><i class="fa-brands fa-square-js fa-2x"></i>JavaScript</li>
+                        <li><i class="fa-solid fa-face-grin-hearts fa-2x"></i>Pride</li>
+                    </ul>
+                </div>
+                <div class="portfolio-item-img">
+                    <img src="./assets/animal-refuge-mockup.png" alt="Screenshot of an animal refuge website on desktop and mobile devices">
+                </div>
+            </div> <!--portfolio item four end-->
+
+            <!-- portfolio item five-->
+            <!-- <div class="portfolio-item-left">
+                <div class="portfolio-item-img">
+                    <img src="./assets/animal-refuge-mockup.png" alt="Screenshot of an animal refuge website on desktop and mobile devices">
+                </div>
+                <div class="portfolio-item-text">
+                    <h3>Animal Refuge</h3>
+                    <div class="button-section">
+                        <a href="https://caryltan-project-1.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square fa-2x" alt="Go to live site"></i></a>
+                        <a href="https://github.com/caryltan/caryl-tan-project-1"><i class="fa-brands fa-github fa-2x" alt="Go to Github Repo"></i></a>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, repellat minima animi aliquid reprehenderit numquam perspiciatis at odit atque quia!</p>
+                    <h4>Made With:</h4>
+                    <ul class="made-with-icons">
+                        <li><i class="fa-brands fa-html5 fa-2x"></i>HTML</li>
+                        <li><i class="fa-brands fa-css3-alt fa-2x"></i>CSS</li>
+                        <li><i class="fa-solid fa-face-grin-stars fa-2x"></i>Excitement</li>
+                    </ul>
+                </div>
+            </div> portfolio item five end -->
+
+        </div> <!--wrapper end-->
+    </section> <!--portfolio section end-->
+
+
+     <!-- about section -->
+     <section class="about" id="about">
+        <div class="wrapper">
+            <h2>About <span class="orange-text">Me!</span></h2>
+            <div class="about-container">
+                <div class="about-image-container">
+                    <img src="./assets/about-picture.jpg" alt="Me, trying to force choke with the power of my Star Wars ugly Xmas sweater">
+                </div>
+                <div class="about-text-container">
+                    <h3>Hello!</h3>
+                    <p>My name is Caryl and I'm a front-end web developer based in Toronto, ON. I come from a background of customer service, sales, marketing, and e-commerce management from the board game industry. There, I built strategies and optimization surrounding customer facing interactions.</p>
+                    <p>As a web developer, I take this same focus on positive and impactful user facing interactions. I strive for accessible, clean, and easy to use applications that not only benefit the user but also the teams I build them with.</p>
+                    <div class="button resume-button">
+                        <a href="resume-button">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--about section end-->
+
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+            <h2>Let's <span class="orange-text">Connect!</span></h2>
+
+            <div class="connect-container">
+                <div class="wrapper">
+                    <ul class="social-media">
+                        <li><a href="https://github.com/caryltan?tab=repositories"><i class="fa-brands fa-github fa-3x" alt="Github Repo"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/caryl-tan/"><i class="fa-brands fa-linkedin fa-3x" alt="Linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/QuicheGames"><i class="fa-brands fa-twitter fa-3x" alt="Twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/quichegames/"><i class="fa-brands fa-instagram fa-3x" alt="Instagram"></i></a></li>
+                        <li><a href="mailto:tan.caryl@gmail.com"><i class="fa-solid fa-envelope fa-3x" alt="Email"></i></a></li>
+                    </ul>
+                </div> <!--wrapper end-->
+            </div> <!--connect-container-->
+
+            <div class="icebreaker-container">
+                <div class="wrapper">
+                    <p class="orange-text">Need an ice breaker?</p>
+                    <h3>Things I Can Talk About Forever!</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-dumbbell fa-2x"></i>Powerlifting</li>
+                        <li><i class="fa-solid fa-gamepad fa-2x"></i>Video Games</li>
+                        <li><i class="fa-solid fa-dice fa-2x"></i>Board Games</li>
+                        <li><i class="fa-solid fa-film fa-2x"></i>Movies/TV Shows</li>
+                        <li><i class="fa-solid fa-user-ninja fa-2x"></i>Anime</li>
+                        <li><i class="fa-solid fa-book-open fa-2x"></i>Graphic Novels</li>
+                    </ul>
+                </div> <!--wrapper end-->
+            </div> <!--icebreaker-container-->
+    </section> <!--contact section end-->
+
+
+    <!--footer section-->
+    <footer>
+        <p>Copyright © 2023 Caryl Tan</p>
+    </footer>
+	<script src="script.js"></script>
 </body>
 </html>

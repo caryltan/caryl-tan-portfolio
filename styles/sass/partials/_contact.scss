@@ -1,0 +1,40 @@
+@use '../variables' as *;
+
+.contact {
+    background-color: $background-primary;
+    text-align: center;
+    h2 {
+        margin: 0 auto;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.connect-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: calc(75px/2);
+    ul {
+        margin: 0 300px;
+    }
+}
+
+.icebreaker-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(75px/2);
+    padding-bottom: 75px;
+    background-color: $background-secondary;
+    h3 {
+        margin-top: 10px;
+        padding-bottom: 32px;
+    }
+}

@@ -1,0 +1,31 @@
+@use '../variables' as *;
+
+//nav
+nav {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize; 
+    ul {
+        margin: 0 auto;
+        padding-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        a {
+            color: $text-color;
+            text-decoration: none;
+            &:visited {
+                color: $text-color;
+            }
+            &:hover, &:focus {
+                color: $text-hover;
+            }
+        }
+        li {
+            padding: 0 20px;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+}

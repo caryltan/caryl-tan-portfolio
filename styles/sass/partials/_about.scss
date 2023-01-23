@@ -1,0 +1,39 @@
+@use '../variables' as *;
+
+.about {
+    background-color: $background-primary;
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .button {
+        &.resume-button {
+            max-width: 250px;
+        }
+    }
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-image-container {
+    flex-basis: 50%;
+    margin-right: 75px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+
+.about-text-container {
+    flex-basis: 50%;
+    margin-left: 75px;
+    p {
+        padding-bottom: 25px;
+    }
+}

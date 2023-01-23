@@ -1,0 +1,31 @@
+@use '../variables' as *;
+
+.skills {
+    background-color: $background-secondary;
+    margin: auto 0;
+    h2 {
+        margin: auto 0;
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        li {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex: 25%;
+            padding: 25px 0;
+            i {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.firebase-logo {
+    height: 95px;
+    padding-bottom: 20px;
+}

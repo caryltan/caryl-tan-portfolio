@@ -1,0 +1,104 @@
+@use  './variables' as *;
+@use  './mixins' as *;
+@use  './responsive' as *;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: $text-color;
+}
+
+//text and fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Poppins', sans-serif;
+	color: $text-color;
+	font-weight: 600;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 75px 0;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    color: $text-color;
+    letter-spacing: 0;
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+    &:visited {
+        color: $text-color;
+    }
+}
+
+ul {
+    padding-left: 0;
+    li {
+        list-style: none;
+    }
+}
+
+//header
+header {
+    background-color: $background-primary;
+    width: 100%;
+    height: 100vh;
+}
+
+//classes
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.orange-text {
+    color: $text-color-orange;
+}
+
+//buttons
+.button {
+    border: 2px solid $text-color;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 1s ease-out;
+    &.portfolio-button {
+        text-transform: uppercase;
+        width: 40%;
+        margin-top: 50px;
+        &:hover {
+            background-color: $text-color;
+            a {
+                color: $text-color-dark;
+            }
+        }
+    }
+}

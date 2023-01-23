@@ -1,0 +1,86 @@
+@use '../variables' as *;
+
+.portfolio {
+    background-color: $background-secondary;
+    margin: 0 auto;
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    h3 {
+        padding-top: 0;
+        .icon-size {
+            font-size: 0.75em;
+        }
+        .span-spacer {
+            padding-left: 10px;
+        }
+    }
+    h4 {
+        text-align: center;
+    }
+    i {
+        padding-bottom: 10px;
+    }
+}
+
+.portfolio-item-left {
+    display: flex;
+}
+
+.portfolio-item-right {
+    display: flex;
+}
+
+.portfolio-item-img {
+    flex-basis: 50%;
+}
+
+.portfolio-item-text {
+    flex-basis: 50%;
+}
+
+.made-with-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.portfolio-item-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    img {
+        width: 100%;
+    }
+}
+
+.portfolio-item-right {
+    padding-bottom: 75px;
+    .portfolio-item-img {
+        margin-left: 75px;
+    }
+    .portfolio-item-text {
+        margin-right: 75px;
+    }
+}
+
+.portfolio-item-left {
+    padding-bottom: 75px;
+    .portfolio-item-img {
+        margin-right: 75px;
+    }
+    .portfolio-item-text {
+        margin-left: 75px;
+    }
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+}

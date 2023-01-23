@@ -1,0 +1,15 @@
+@use './setup';
+@use './commons';
+@use './mixins';
+@use './variables';
+@use './responsive';
+
+// partials
+@use './partials/nav';
+@use './partials/header';
+@use './partials/skills';
+@use './partials/portfolio';
+@use './partials/about';
+@use './partials/contact';
+@use './partials/footer';
+
