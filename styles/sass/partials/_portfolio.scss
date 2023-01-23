@@ -9,6 +9,12 @@
     }
     h3 {
         padding-top: 0;
+        .icon-size {
+            font-size: 0.75em;
+        }
+        .span-spacer {
+            padding-left: 10px;
+        }
     }
     h4 {
         text-align: center;
@@ -72,4 +78,9 @@
     .portfolio-item-text {
         margin-left: 75px;
     }
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
 }

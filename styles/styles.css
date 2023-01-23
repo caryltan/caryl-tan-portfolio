@@ -360,6 +360,9 @@ nav ul li {
 header {
   position: relative;
 }
+header h2 {
+  padding: 25px 0;
+}
 
 .intro-container {
   display: -webkit-box;
@@ -446,6 +449,12 @@ header {
 .portfolio h3 {
   padding-top: 0;
 }
+.portfolio h3 .icon-size {
+  font-size: 0.75em;
+}
+.portfolio h3 .span-spacer {
+  padding-left: 10px;
+}
 .portfolio h4 {
   text-align: center;
 }
@@ -529,6 +538,15 @@ header {
 }
 .portfolio-item-left .portfolio-item-text {
   margin-left: 75px;
+}
+
+.title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about {
