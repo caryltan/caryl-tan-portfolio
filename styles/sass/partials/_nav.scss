@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../responsive' as *;
 
 //nav
 nav {
@@ -26,6 +27,45 @@ nav {
     }
 }
 
+.desktop-menu {
+    @include mobile {
+        display: none;
+    }
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    ul {
+        margin: 0;
+        padding-top: 0.75em;
+    }
+}
+
 .mobile-menu {
     display: none;
+    @include mobile {
+    &.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+            li {
+                padding: 0.75em 0;
+            }
+            a {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+
+.fa-bars {
+    padding-top: 30px;
+    display: none;
+    font-size: 2.5rem;
+    @include mobile {
+        display: flex;
+    }
 }
