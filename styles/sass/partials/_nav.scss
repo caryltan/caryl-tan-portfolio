@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use '../responsive' as *;
+@use '../mixins' as *;
 
 //nav
 nav {
@@ -54,18 +55,11 @@ nav {
     }
     .mobile-menu {
         display: none;
+        padding-top: 50px;
         @include mobile {
         &.open {
             display: flex;
             }
-        }
-    }
-    .fa-bars {
-        padding-top: 30px;
-        display: none;
-        font-size: 2.5rem;
-        @include mobile {
-            display: flex;
         }
     }
 }
@@ -86,24 +80,49 @@ nav {
     .line-one {
         top: 25px;
         &.hamburger-animate {
-        transform-origin: top left;
-        transform: rotate(45deg);
-        translate: 20px;
+            @include keyframes(hamburgerTransformOne){
+                0%{
+                    transform: rotate(0deg);
+                }
+               100%{
+                transform-origin: top left;
+                transform: rotate(45deg);
+                translate: 20px -15px;
+               }
+            }
+            @include animate(hamburgerTransformOne, 0.15s, ease-in, 1);
+            }
+        
         }
-    }
     .line-two {
         top: 50px;
         &.hamburger-animate {
-            right: -100px;
+            @include keyframes(hamburgerTransformTwo){
+                0%{
+                    right:0;
+                }
+                100%{
+                    right: -100px;
+                }
+            }
+            @include animate(hamburgerTransformTwo, 0.15s, ease-in-out,1)
         }
     } 
     .line-three {
         top: 75px;
         &.hamburger-animate {
-        transform-origin: bottom left;
-        transform: rotate(-45deg);
-        translate: 20px;
-        }
+            @include keyframes(hamburgerTransformThree){
+                0%{
+                    transform: rotate(0deg);
+                }
+               100%{
+                transform-origin: bottom left;
+                transform: rotate(-45deg);
+                translate: 20px -15px;
+               }
+            }
+            @include animate(hamburgerTransformThree, 0.15s, ease-in-out, 1);
+            }
     }
 }
 
