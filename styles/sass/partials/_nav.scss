@@ -65,10 +65,14 @@ nav {
 }
 
 .hamburger-icon {
+    display: none;
     position: relative;
     height: 75px;
     width: 75px;
     top: 25px;
+    @include mobile {
+        display: block;
+    }
     span {
         display: block;
         position: absolute;
@@ -85,9 +89,9 @@ nav {
                     transform: rotate(0deg);
                 }
                100%{
-                transform-origin: top left;
-                transform: rotate(45deg);
-                translate: 20px -15px;
+                    transform-origin: top left;
+                    transform: rotate(45deg);
+                    translate: 20px -15px;
                }
             }
             @include animate(hamburgerTransformOne, 0.15s, ease-in, 1);
@@ -116,9 +120,9 @@ nav {
                     transform: rotate(0deg);
                 }
                100%{
-                transform-origin: bottom left;
-                transform: rotate(-45deg);
-                translate: 20px -15px;
+                    transform-origin: bottom left;
+                    transform: rotate(-45deg);
+                    translate: 20px -15px;
                }
             }
             @include animate(hamburgerTransformThree, 0.15s, ease-in-out, 1);
