@@ -425,98 +425,46 @@ nav ul li {
 }
 .hamburger-icon .line-one {
   top: 25px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  translate: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 .hamburger-icon .line-one.hamburger-animate {
-  -webkit-animation: hamburgerTransformOne 0.15s ease-in 1;
-          animation: hamburgerTransformOne 0.15s ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes hamburgerTransformOne {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    translate: 20px -15px;
-  }
-}
-@keyframes hamburgerTransformOne {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    translate: 20px -15px;
-  }
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  translate: 20px -5px;
 }
 .hamburger-icon .line-two {
   top: 50px;
+  right: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 .hamburger-icon .line-two.hamburger-animate {
-  -webkit-animation: hamburgerTransformTwo 0.15s ease-in-out 1;
-          animation: hamburgerTransformTwo 0.15s ease-in-out 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes hamburgerTransformTwo {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100px;
-  }
-}
-@keyframes hamburgerTransformTwo {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100px;
-  }
+  right: -100px;
 }
 .hamburger-icon .line-three {
   top: 75px;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  translate: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 .hamburger-icon .line-three.hamburger-animate {
-  -webkit-animation: hamburgerTransformThree 0.15s ease-in-out 1;
-          animation: hamburgerTransformThree 0.15s ease-in-out 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes hamburgerTransformThree {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform-origin: bottom left;
-            transform-origin: bottom left;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    translate: 20px -15px;
-  }
-}
-@keyframes hamburgerTransformThree {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform-origin: bottom left;
-            transform-origin: bottom left;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    translate: 20px -15px;
-  }
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  translate: 20px -5px;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 header {
