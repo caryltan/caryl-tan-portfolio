@@ -72,7 +72,7 @@ nav {
 
 .hamburger-icon {
     position: relative;
-    height: 100px;
+    height: 75px;
     width: 75px;
     top: 25px;
     span {
@@ -85,12 +85,25 @@ nav {
     }
     .line-one {
         top: 25px;
+        &.hamburger-animate {
+        transform-origin: top left;
+        transform: rotate(45deg);
+        translate: 20px;
+        }
     }
     .line-two {
         top: 50px;
+        &.hamburger-animate {
+            right: -100px;
+        }
     } 
     .line-three {
         top: 75px;
+        &.hamburger-animate {
+        transform-origin: bottom left;
+        transform: rotate(-45deg);
+        translate: 20px;
+        }
     }
 }
 

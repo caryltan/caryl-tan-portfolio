@@ -416,7 +416,7 @@ nav ul li {
 
 .hamburger-icon {
   position: relative;
-  height: 100px;
+  height: 75px;
   width: 75px;
   top: 25px;
 }
@@ -431,11 +431,28 @@ nav ul li {
 .hamburger-icon .line-one {
   top: 25px;
 }
+.hamburger-icon .line-one.hamburger-animate {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  translate: 20px;
+}
 .hamburger-icon .line-two {
   top: 50px;
 }
+.hamburger-icon .line-two.hamburger-animate {
+  right: -100px;
+}
 .hamburger-icon .line-three {
   top: 75px;
+}
+.hamburger-icon .line-three.hamburger-animate {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  translate: 20px;
 }
 
 header {
