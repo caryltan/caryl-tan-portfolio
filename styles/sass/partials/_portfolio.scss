@@ -1,8 +1,12 @@
 @use '../variables' as *;
+@use '../responsive' as *;
 
 .portfolio {
     background-color: $background-secondary;
     margin: 0 auto;
+    @include mobile {
+        text-align: center;
+    }
     h2 {
         margin: 0 auto;
         text-align: center;
@@ -26,14 +30,48 @@
 
 .portfolio-item-left {
     display: flex;
+    padding-bottom: 75px;
+    @include mobile {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-item-img {
+        margin-right: 75px;
+        @include mobile {
+            margin: 0;
+        }
+    }
+    .portfolio-item-text {
+        margin-left: 75px;
+        @include mobile {
+            margin: 0;
+        }
+    }
 }
 
 .portfolio-item-right {
     display: flex;
-}
-
-.portfolio-item-img {
-    flex-basis: 50%;
+    padding-bottom: 75px;
+    @include mobile {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-item-img {
+        margin-left: 75px;
+        @include mobile {
+            margin: 0;
+        }
+    }
+    .portfolio-item-text {
+        margin-right: 75px;
+        @include mobile {
+            margin: 0;
+        }
+    }
 }
 
 .portfolio-item-text {
@@ -42,7 +80,8 @@
 
 .made-with-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
     li {
         display: flex;
@@ -53,30 +92,11 @@
 
 .portfolio-item-img {
     display: flex;
+    flex-basis: 50%;
     justify-content: center;
     flex-direction: column;
     img {
         width: 100%;
-    }
-}
-
-.portfolio-item-right {
-    padding-bottom: 75px;
-    .portfolio-item-img {
-        margin-left: 75px;
-    }
-    .portfolio-item-text {
-        margin-right: 75px;
-    }
-}
-
-.portfolio-item-left {
-    padding-bottom: 75px;
-    .portfolio-item-img {
-        margin-right: 75px;
-    }
-    .portfolio-item-text {
-        margin-left: 75px;
     }
 }
 

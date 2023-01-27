@@ -40,7 +40,16 @@ nav {
     align-items: flex-end;
     position: absolute;
     right: 0;
-    padding-right: 25px;
+    overflow: hidden;
+    // padding-right: 25px;
+    padding: 0 25px 0 100px;
+    transition: 0.25s ease-in-out;
+    &.open {
+        background-color: $background-secondary;
+        transition: 0.25s ease-in-out;
+        z-index: 2;
+        height: 80vh;
+    }
     ul {
         margin: 0;
         padding-top: 0.75em;
@@ -54,11 +63,18 @@ nav {
         }
     }
     .mobile-menu {
-        display: none;
+        visibility: hidden;
         padding-top: 50px;
+        // background-color: $background-secondary;
+        opacity: 0%;
+        transition: 0.25s ease-in-out;
+        z-index: 1;
         @include mobile {
         &.open {
+            visibility: visible;
             display: flex;
+            opacity: 100%;
+            transition: 0.25s ease-in-out;
             }
         }
     }
@@ -70,6 +86,7 @@ nav {
     height: 75px;
     width: 75px;
     top: 25px;
+    z-index: 2;
     @include mobile {
         display: block;
     }
@@ -90,6 +107,7 @@ nav {
             transform-origin: top left;
             transform: rotate(45deg);
             translate: 20px -5px;
+            background-color: $text-hover;
         }
     }
     .line-two {
@@ -98,6 +116,8 @@ nav {
         transition: .25s ease-in-out;
         &.hamburger-animate {
             right: -100px;
+            background-color: $text-hover;
+            position: absolute;
         }
     }
     .line-three {
@@ -110,7 +130,8 @@ nav {
             transform-origin: bottom left;
             transform: rotate(-45deg);
             translate: 20px -5px;
-            transition: .25s ease-in-out
+            transition: .25s ease-in-out;
+            background-color: $text-hover;
         }            
     }
 }
