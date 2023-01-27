@@ -37,35 +37,60 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: absolute;
+    right: 0;
+    padding-right: 25px;
     ul {
         margin: 0;
         padding-top: 0.75em;
-    }
-}
-
-.mobile-menu {
-    display: none;
-    @include mobile {
-    &.open {
-        display: flex;
         flex-direction: column;
         align-items: flex-end;
-            li {
-                padding: 0.75em 0;
+        li {
+            padding: 0.75em 0;
+        }
+        a {
+            font-size: 2.5em;
+        }
+    }
+    .mobile-menu {
+        display: none;
+        @include mobile {
+        &.open {
+            display: flex;
             }
-            a {
-                font-size: 1.5em;
-            }
+        }
+    }
+    .fa-bars {
+        padding-top: 30px;
+        display: none;
+        font-size: 2.5rem;
+        @include mobile {
+            display: flex;
         }
     }
 }
 
-
-.fa-bars {
-    padding-top: 30px;
-    display: none;
-    font-size: 2.5rem;
-    @include mobile {
-        display: flex;
+.hamburger-icon {
+    position: relative;
+    height: 100px;
+    width: 75px;
+    top: 25px;
+    span {
+        display: block;
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        background-color: $text-color;
+        border-radius: 9px;
+    }
+    .line-one {
+        top: 25px;
+    }
+    .line-two {
+        top: 50px;
+    } 
+    .line-three {
+        top: 75px;
     }
 }
+
