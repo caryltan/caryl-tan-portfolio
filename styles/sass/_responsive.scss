@@ -1,6 +1,6 @@
-$breakpoint-one: 1365px;
-$breakpoint-two: 820px;
-$breakpoint-three: 427px;
+$breakpoint-one: 1025px;
+$breakpoint-two: 641px;
+$breakpoint-three: 640px;
 
 @mixin desktop () {
     @media (max-width: $breakpoint-one) { 
