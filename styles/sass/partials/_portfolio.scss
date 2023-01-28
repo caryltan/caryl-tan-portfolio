@@ -1,11 +1,18 @@
 @use '../variables' as *;
+@use '../responsive' as *;
 
 .portfolio {
     background-color: $background-secondary;
     margin: 0 auto;
+    @include tablet {
+        text-align: center;
+    }
     h2 {
         margin: 0 auto;
         text-align: center;
+        @include mobile {
+            padding: 50px 0;
+        }
     }
     h3 {
         padding-top: 0;
@@ -14,6 +21,9 @@
         }
         .span-spacer {
             padding-left: 10px;
+            @include mobile {
+                padding: 0 10px;
+            }
         }
     }
     h4 {
@@ -26,14 +36,52 @@
 
 .portfolio-item-left {
     display: flex;
+    padding-bottom: 75px;
+    @include mobile {
+        padding-bottom: 50px;
+    }
+    @include tablet {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-item-img {
+        margin-right: 75px;
+        @include tablet {
+            margin: 0;
+        }
+    }
+    .portfolio-item-text {
+        margin-left: 75px;
+        @include tablet {
+            margin: 0;
+        }
+    }
 }
 
 .portfolio-item-right {
     display: flex;
-}
-
-.portfolio-item-img {
-    flex-basis: 50%;
+    padding-bottom: 75px;
+    @include tablet {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .portfolio-item-img {
+        margin-left: 75px;
+        @include tablet {
+            margin: 0;
+        }
+    }
+    .portfolio-item-text {
+        margin-right: 75px;
+        @include tablet {
+            margin: 0;
+        }
+    }
 }
 
 .portfolio-item-text {
@@ -42,17 +90,29 @@
 
 .made-with-icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
     li {
         display: flex;
         flex-direction: column;
         text-align: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        @include mobile {
+            flex-basis: 33%;
+        }
+    }
+    i {
+        @include mobile {
+            font-size: 3rem;
+        }
     }
 }
 
 .portfolio-item-img {
     display: flex;
+    flex-basis: 50%;
     justify-content: center;
     flex-direction: column;
     img {
@@ -60,27 +120,10 @@
     }
 }
 
-.portfolio-item-right {
-    padding-bottom: 75px;
-    .portfolio-item-img {
-        margin-left: 75px;
-    }
-    .portfolio-item-text {
-        margin-right: 75px;
-    }
-}
-
-.portfolio-item-left {
-    padding-bottom: 75px;
-    .portfolio-item-img {
-        margin-right: 75px;
-    }
-    .portfolio-item-text {
-        margin-left: 75px;
-    }
-}
-
 .title-section {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+        justify-content: center;
+    }
 }

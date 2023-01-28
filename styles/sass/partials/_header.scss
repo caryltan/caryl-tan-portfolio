@@ -1,31 +1,77 @@
+@use '../responsive' as *;
+
 header {
     position: relative;
+    @include tablet {
+        text-align: center;
+    }
+    h1 {
+        @include mobile {
+            margin: 0;
+            line-height: 70px;
+        }
+    }
     h2 {
         padding: 25px 0;
+        @include mobile {
+            padding: 20px 0;
+            margin: auto;
+            font-size: 25px;
+            line-height: 20px;
+        }
+    }
+    p {
+        @include tablet {
+            margin: 0 100px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    .portfolio-button {
+        @include tablet {
+            width: 30%;    
+        }
+        @include mobile {
+            display: none;
+        }
     }
 }
 
 .intro-container {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    @include tablet {
+        flex-direction: column;
+        left: 0;
+        margin: 0 20px;
+    }
 }
 
 .intro-text {
     flex-basis: 50%;
-    position: relative;
-    top: 30vh;
+    flex-grow: 1;
 }
 
 .profile-picture {
     flex-basis: 50%;
+    max-width:500px;
     background-color: transparent;
     display: flex;
     justify-content: flex-end;
     img {
         width: 100%;
-        max-width: 500px;
         height: auto;
-        position: absolute;
-        bottom: 0;
+        flex-grow: 1;
+        @include tablet {
+            position: relative;
+            padding-top: 50px;
+            left: 30%;
+        }
+        @include mobile {
+            padding-top: 20px;
+            left: 0;
+        }
     }
 }
-

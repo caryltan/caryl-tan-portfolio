@@ -1,20 +1,35 @@
 @use '../variables' as *;
+@use '../responsive' as *;
 
 .contact {
     background-color: $background-primary;
     text-align: center;
     h2 {
         margin: 0 auto;
+        @include mobile {
+            padding: 50px 0;
+        }
     }
     ul {
         display: flex;
         justify-content: space-between;
         margin: 0 50px;
+        @include mobile {
+            justify-content: center;
+            flex-direction: row;
+            flex-basis: 33%;
+            width: 100%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
     }
     li {
         display: flex;
         flex-direction: column;
         text-align: center;
+        @include mobile {
+            padding: 20px;
+        }
     }
 }
 
@@ -24,6 +39,23 @@
     padding-bottom: calc(75px/2);
     ul {
         margin: 0 300px;
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            li {
+                @include tablet {
+                    width: 100%;
+                    flex-basis: 20%;
+                }
+                @include mobile {
+                flex-basis: 33%;
+                }
+            }
+        }
     }
 }
 
@@ -33,8 +65,22 @@
     padding-top: calc(75px/2);
     padding-bottom: 75px;
     background-color: $background-secondary;
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+    }
     h3 {
         margin-top: 10px;
         padding-bottom: 32px;
+        @include mobile {
+            padding-bottom: 0;
+        }
+    }
+    li {
+        @include mobile {
+            flex-basis: 50%;
+        }
     }
 }
