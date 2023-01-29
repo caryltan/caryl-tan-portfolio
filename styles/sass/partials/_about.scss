@@ -6,9 +6,6 @@
     h2 {
         text-align: center;
         margin: 0 auto;
-        @include mobile {
-            padding: 50px 0;
-        }
     }
     .button {
         &.resume-button {
@@ -19,7 +16,7 @@
 
 .about-container {
     display: flex;
-    @include tablet {
+    @include tablet-large {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -31,7 +28,7 @@
     margin-right: 75px;
     display: flex;
     justify-content: center;
-    @include tablet {
+    @include tablet-large {
         margin: 0;
     }
     img {
@@ -45,7 +42,7 @@
 .about-text-container {
     flex-basis: 50%;
     margin-left: 75px;
-    @include tablet {
+    @include tablet-large {
         margin: 0;
         text-align: center;
     }

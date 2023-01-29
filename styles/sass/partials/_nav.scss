@@ -41,9 +41,11 @@ nav {
     position: absolute;
     right: 0;
     overflow: hidden;
-    // padding-right: 25px;
     padding: 0 25px 0 100px;
     transition: 0.25s ease-in-out;
+    @include tablet {
+        padding: 0;
+    }
     &.open {
         background-color: $background-secondary;
         transition: 0.25s ease-in-out;
