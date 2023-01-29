@@ -4,15 +4,12 @@
 .portfolio {
     background-color: $background-secondary;
     margin: 0 auto;
-    @include tablet {
+    @include tablet-large {
         text-align: center;
     }
     h2 {
         margin: 0 auto;
         text-align: center;
-        @include mobile {
-            padding: 50px 0;
-        }
     }
     h3 {
         padding-top: 0;
@@ -40,7 +37,7 @@
     @include mobile {
         padding-bottom: 50px;
     }
-    @include tablet {
+    @include tablet-large {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
@@ -48,13 +45,13 @@
     }
     .portfolio-item-img {
         margin-right: 75px;
-        @include tablet {
+        @include tablet-large {
             margin: 0;
         }
     }
     .portfolio-item-text {
         margin-left: 75px;
-        @include tablet {
+        @include tablet-large {
             margin: 0;
         }
     }
@@ -63,7 +60,7 @@
 .portfolio-item-right {
     display: flex;
     padding-bottom: 75px;
-    @include tablet {
+    @include tablet-large {
         flex-direction: column-reverse;
         flex-wrap: wrap;
         justify-content: center;
@@ -72,13 +69,13 @@
     }
     .portfolio-item-img {
         margin-left: 75px;
-        @include tablet {
+        @include tablet-large {
             margin: 0;
         }
     }
     .portfolio-item-text {
         margin-right: 75px;
-        @include tablet {
+        @include tablet-large {
             margin: 0;
         }
     }
@@ -91,8 +88,11 @@
 .made-with-icons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 0;
+    @include tablet-large{
+        flex-wrap: wrap;
+    }
     li {
         display: flex;
         flex-direction: column;
@@ -123,7 +123,7 @@
 .title-section {
     display: flex;
     justify-content: space-between;
-    @include tablet {
+    @include tablet-large {
         justify-content: center;
     }
 }

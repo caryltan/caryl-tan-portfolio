@@ -7,6 +7,9 @@
     h2 {
         margin: auto 0;
         text-align: center;
+        @include mobile {
+            padding-bottom: 0;
+        }
     }
     ul {
         display: flex;

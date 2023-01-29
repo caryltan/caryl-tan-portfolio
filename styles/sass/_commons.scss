@@ -34,15 +34,26 @@ h6{
 h1 {
     font-size: 55px;
     font-weight: 900;
+    line-height: 55px;
+    @include tablet-large {
+        font-size: 2.5em;
+    }
+    @include mobile {
+        font-size: 3em;
+    }
 }
 
 h2 {
     font-size: 50px;
     font-weight: 900;
     padding: 75px 0;
+    line-height: 50px;
+    @include tablet-large {
+        font-size: 2em;
+    }
     @include mobile {
         line-height: 75px;
-        padding: 50px 0 25px 0;
+        padding: 25px 0;
     }
 }
 
@@ -91,8 +102,8 @@ ul {
 header {
     background-color: $background-primary;
     width: 100%;
-    height: 100vh;
-    @include mobile {
+    height: auto;
+    @include tablet-large {
         height: auto;
     }
 }
@@ -101,6 +112,7 @@ header {
 .wrapper {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
 .orange-text {

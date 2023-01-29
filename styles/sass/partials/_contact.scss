@@ -6,9 +6,6 @@
     text-align: center;
     h2 {
         margin: 0 auto;
-        @include mobile {
-            padding: 50px 0;
-        }
     }
     ul {
         display: flex;
@@ -39,7 +36,7 @@
     padding-bottom: calc(75px/2);
     ul {
         margin: 0 300px;
-        @include tablet {
+        @include tablet-large {
             display: flex;
             justify-content: center;
             flex-direction: row;
@@ -47,7 +44,7 @@
             padding: 0;
             flex-wrap: wrap;
             li {
-                @include tablet {
+                @include tablet-large {
                     width: 100%;
                     flex-basis: 20%;
                 }

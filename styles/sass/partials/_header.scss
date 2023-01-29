@@ -2,7 +2,7 @@
 
 header {
     position: relative;
-    @include tablet {
+    @include tablet-large {
         text-align: center;
     }
     h1 {
@@ -13,42 +13,57 @@ header {
     }
     h2 {
         padding: 25px 0;
+        @include tablet-large {
+            padding: 10px 0;
+        }
         @include mobile {
-            padding: 20px 0;
             margin: auto;
             font-size: 25px;
             line-height: 20px;
         }
     }
     p {
-        @include tablet {
-            margin: 0 100px;
+        @include tablet-large {
+            margin: 0 auto;
         }
         @include mobile {
             display: none;
         }
     }
     .portfolio-button {
+        @include tablet-large {
+            width: 30%;  
+            margin: 30px 0;  
+        }
         @include tablet {
-            width: 30%;    
+            width: 40%;
         }
         @include mobile {
             display: none;
         }
     }
+    .wrapper {
+        position: relative;
+        height: 100%;
+    }
 }
 
 .intro-container {
     display: flex;
-    position: absolute;
-    bottom: 0;
-    @include tablet {
+    padding-top: 100px;
+    @include tablet-large {
         flex-direction: column;
+        align-items: center;
         left: 0;
         margin: 0 20px;
+        padding-top: 50px;
+    }
+    @include tablet {
+        padding-top: 100px;
     }
     @include mobile {
         position: relative;
+        margin: 0 auto;
     }
 }
 
@@ -67,10 +82,12 @@ header {
         width: 100%;
         height: auto;
         flex-grow: 1;
-        @include tablet {
-            position: relative;
+        @include tablet-large {
             padding-top: 50px;
             left: 30%;
+        }
+        @include tablet {
+            padding-top: 10px;
         }
         @include mobile {
             padding-top: 20px;
