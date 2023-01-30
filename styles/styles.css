@@ -601,6 +601,14 @@ header .wrapper {
   height: 100%;
 }
 
+.intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .intro-container .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -49,6 +49,8 @@ header {
 }
 
 .intro-container {
+    display: flex;
+    justify-content: center;
     .wrapper {
         display: flex;
         padding-top: 100px;
