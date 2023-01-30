@@ -15,3 +15,11 @@ hamburgerIcon.addEventListener('click', () => {
     menuContainer.classList.toggle("open");
     // wholePage.classList.toggle("open");
 })
+
+
+
+//header rotating text
+let rotatingWords = document.querySelectorAll("rotate")
+rotatingWords.forEach( word => {
+    let letters = word.textContent.split("");
+})

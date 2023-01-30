@@ -601,7 +601,7 @@ header .wrapper {
   height: 100%;
 }
 
-.intro-container {
+.intro-container .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
