@@ -907,6 +907,15 @@ header .wrapper {
     font-size: 3rem;
   }
 }
+.made-with-icons .firebase-logo {
+  height: 40px;
+  padding-bottom: 10px;
+}
+@media (max-width: 576px) {
+  .made-with-icons .firebase-logo {
+    height: 58px;
+  }
+}
 
 .portfolio-item-img {
   display: -webkit-box;

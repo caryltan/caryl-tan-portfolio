@@ -108,6 +108,13 @@
             font-size: 3rem;
         }
     }
+    .firebase-logo {
+        height: 40px;
+        padding-bottom: 10px;
+        @include mobile {
+            height: 58px;
+        }
+    }
 }
 
 .portfolio-item-img {
