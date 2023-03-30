@@ -358,15 +358,21 @@ button {
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }
-button.portfolio-button {
+
+.portfolio-button {
   text-transform: uppercase;
   width: 40%;
   margin-top: 50px;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 10px 25px;
+  margin-top: 25px;
 }
-button.portfolio-button:hover {
+.portfolio-button:hover {
   background-color: #fff;
+  color: #052e40;
 }
-button.portfolio-button:hover a {
+.portfolio-button:hover a {
   color: #333333;
 }
 
@@ -687,6 +693,10 @@ header .wrapper {
     padding-top: 20px;
     left: 0;
   }
+}
+
+.header-text {
+  padding-bottom: 50px;
 }
 
 .skills {
