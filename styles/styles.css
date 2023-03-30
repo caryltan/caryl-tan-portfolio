@@ -580,6 +580,9 @@ header h2 {
     display: none;
   }
 }
+header .portfolio-button {
+  max-width: 250px;
+}
 @media (max-width: 992px) {
   header .portfolio-button {
     width: 30%;
